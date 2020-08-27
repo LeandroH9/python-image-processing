@@ -1,7 +1,7 @@
 
 
 import cv2
-img = cv2.imread('entrada.jpg')
+img = cv2.imread('..\entrada.jpg')
 print(img.shape)
 
 (alt, lar) = img.shape[:2] #captura altura e largura (0, 1)
