@@ -107,9 +107,9 @@ def XOR(img1, img2):
     return None
     
 
-def NOT(img1, img2):
-    if(isGrayScale(img1) and IsGrayScale(img2)):
-        BitNot = cv2.bitwise_not(img1, img2)
+def NOT(img1):
+    if isGrayScale(img1):
+        BitNot = cv2.bitwise_not(img1)
         return BitNot
     return None
 
