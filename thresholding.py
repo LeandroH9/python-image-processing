@@ -90,7 +90,7 @@ def thresholdRiddlerCalvard(img, inverse):
         
     return (thresh, T)
 
-
+'''
 image = readGrayScale("entrada2.jpg")
 show("original", image)
 infoImg(image)
@@ -106,7 +106,7 @@ print(T)
 show("imagem threshold otsu", threshOtsu)
 show("imagem threshold rc", threshRC)
 
-'''
+
 
 threshMean = thresholdAdaptiveMean(burred, False, 11, 4)
 threshGaussian = thresholdAdaptiveGaussian(burred, False, 11, 3)
