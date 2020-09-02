@@ -140,9 +140,9 @@ def merge(img, B = None, G = None, R = None):
     mergeed = cv2.merge([B, G, R])
     return mergeed
         
-
+'''
 image = read("entrada2.jpg")
 show("original", image)
 infoImg(image)
 
-
+'''
