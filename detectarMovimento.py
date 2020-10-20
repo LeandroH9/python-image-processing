@@ -51,10 +51,10 @@ while cap.isOpened():
             continue
 
         
-        (x, y, w, h) = cv2.boudingRect(c) #retorna (inicioX, inicio Y, largura, altura)
+        (x, y, w, h) = cv2.bouningRect(c) #retorna (inicioX, inicio Y, largura, altura)
         cv2.rectangle(frame, (x,y), (x + w, y + h), (0, 255, 0), 2)
         text = "Occupied"
-        '''
+    '''
    
     temp = np.vstack([
         np.hstack([blurred, frameDelta]),
@@ -64,13 +64,6 @@ while cap.isOpened():
     pdi.show("Frame Inicial", firstFrame)
     pdi.show("Frame atual", frame)
     pdi.show("Frames apos processamento", temp)
-    '''
-    pdi.show("Frame atual com blurred", blurred)
-    pdi.show("Frame com blurred e subtracao de fundo", frameDelta)
-    pdi.show("Frame com blurred, substracao de fundo e Thresh Otsu", thresh)
-    pdi.show("Frame dcom blurred, substracao de fundo e dilate", frameDilate)
-
-    '''
     
     if cv2.waitKey(0) & 0xFF == ord('q'):
         break

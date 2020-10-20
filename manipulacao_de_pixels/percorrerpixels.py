@@ -1,6 +1,6 @@
 import cv2
 
-imagem = cv2.imread('entrada.jpg')
+imagem = cv2.imread('\..\entrada2.jpg')
 
 #varrendo os pixels com laços de repetição (não muito performático)
 
@@ -31,7 +31,8 @@ cv2.waitKey(0)
 cv2.destroyAllWindows ()
 
 #criando pontos amarelos na imagem, com uma distancia de 10 pixels entre as linhas e colunas
-imagem = cv2.imread('entrada.jpg')
+imagem = cv2.imread('entrada.jpg')
+
 for x in range(0, imagem.shape[0], 10):
     for y in range(0, imagem.shape[1], 10):
         imagem[x: x + 5, y: y + 5] = (0, 255, 255) #quadrado amarelo de 5x5 pixels

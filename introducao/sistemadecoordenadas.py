@@ -14,9 +14,7 @@ print(f'vermelho: {r}')
 #Use a função cv2.imshow () para exibir uma imagem em uma janela. A janela se ajusta automaticamente ao tamanho da imagem.
 cv2.imshow('imagem', imagem)
 
-
 cv2.waitKey(0) #recebe como argumento um tempo em milissegundos
-
 
 cv2.destroyAllWindows()
 
