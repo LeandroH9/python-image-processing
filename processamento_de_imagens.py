@@ -140,9 +140,13 @@ def merge(img, B = None, G = None, R = None):
     mergeed = cv2.merge([B, G, R])
     return mergeed
         
-'''
-image = read("entrada2.jpg")
-show("original", image)
+
+image = read("minha_foto.png")
+image = resize(image, 250)
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) 
+equalize = cv2.equalizeHist(gray)
+show("original", equalize)
 infoImg(image)
 
-'''
+#cv2.imwrite("minha_foto_equalizada.png", image)
+
